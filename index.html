@@ -1351,6 +1351,7 @@ setTimeout(()=>{
   if(!tooltipShown&&!panelOpen){waTooltip.classList.remove('hidden');tooltipShown=true;setTimeout(()=>waTooltip.classList.add('hidden'),4000);}
 },3000);
 
+  
 // ── SCROLL ANIMATIONS ──
 const observer = new IntersectionObserver(entries=>{
   entries.forEach(e=>{ if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target);} });
